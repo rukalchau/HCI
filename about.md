@@ -4,5 +4,5 @@ title: About
 ---
 
 <p class="message">
-What's up! Here is Luffy, a MATH | CS | AI studnet, I offer stem tutorial to secondary students.
+What's up! Here is Luffy, a current MATH + AI student who taking HCI course.
 </p>
