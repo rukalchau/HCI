@@ -3,7 +3,7 @@ title:               Luffy's Blog
 tagline:             ''
 description:         'Hello World'
 url:                 https://rukalchau.github.io
-baseurl:             '/Luffy'
+baseurl:             '/HCI'
 paginate:            5
 permalink:           pretty
 
