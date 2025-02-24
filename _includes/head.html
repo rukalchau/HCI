@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+    {% if page.title %}
+      {{ page.title }} &middot; Project Portfolio
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      Project Portfolio
     {% endif %}
   </title>
 
@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Add any project-specific stylesheets here -->
+  <link rel="stylesheet" href="{{ '/public/css/project.css' | absolute_url }}">
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
   <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
