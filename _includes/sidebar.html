@@ -25,12 +25,13 @@
       {% endif %}
     {% endfor %}
 
-    <!-- Add logic to include posts -->
+    <!-- Add logic to include posts from a specific folder -->
     {% for post in site.posts %}
-      <a class="sidebar-nav-item{% if page.url == post.url %} active{% endif %}" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      {% if post.path contains '/project1/' %}
+        <a class="sidebar-nav-item{% if page.url == post.url %} active{% endif %}" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
